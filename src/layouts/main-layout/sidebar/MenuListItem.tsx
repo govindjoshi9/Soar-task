@@ -24,7 +24,7 @@ const MenuListItem = ({ menuItem, onDrawerClose }: MenuListProps) => {
         '&::before': {
           content: '""',
           position: 'absolute',
-          bgcolor: isActive ? 'primary.main' : 'transparent',
+          bgcolor: isActive ? 'primary.darker' : 'transparent',
           top: 0,
           bottom: 0,
           left: 0,
@@ -46,14 +46,14 @@ const MenuListItem = ({ menuItem, onDrawerClose }: MenuListProps) => {
           gap: 3.125,
           flex: 1,
           borderRadius: 2,
-          color: isActive ? 'primary.main' : menuItem.available ? 'grey[700]' : 'action.disabled',
+          color: isActive ? 'primary.darker' : menuItem.available ? 'grey[700]' : 'action.disabled',
           transition: 'color 0.35s ease',
           '&:hover, &:focus': {
             backgroundColor: 'neutral.light',
             boxShadow: 'shadows[10]',
-            color: !menuItem.available ? 'action.disabled' : 'primary.main',
+            color: !menuItem.available ? 'action.disabled' : 'primary.darker',
             '& .MuiSvgIcon-root': {
-              color: !menuItem.available ? 'action.disabled' : 'primary.main',
+              color: !menuItem.available ? 'action.disabled' : 'primary.darker',
             },
           },
         }}
@@ -63,7 +63,7 @@ const MenuListItem = ({ menuItem, onDrawerClose }: MenuListProps) => {
             minWidth: 'auto',
 
             color: isActive
-              ? 'primary.main'
+              ? 'primary.dark'
               : menuItem.available
                 ? 'neutral.dark'
                 : 'action.disabled',

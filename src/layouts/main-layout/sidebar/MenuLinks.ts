@@ -5,8 +5,7 @@ import InvestIcon from 'components/icons/menu-icons/InvestIcon';
 import LoanIcon from 'components/icons/menu-icons/LoanIcon';
 import ServiceIcon from 'components/icons/menu-icons/ServiceIcon';
 import SettingsIcon from 'components/icons/menu-icons/SettingsIcon';
-import SignInIcon from 'components/icons/menu-icons/SignInIcon';
-import SignUpIcon from 'components/icons/menu-icons/SignUpIcon';
+import PrivilageIcon from 'components/icons/menu-icons/Privilage';
 import TransferIcon from 'components/icons/menu-icons/TransferIcon';
 import UserIcon from 'components/icons/menu-icons/UserIcon';
 
@@ -18,11 +17,8 @@ export enum linkEnum {
   Credit = 'credit-cards',
   Loans = 'loans',
   Services = 'Services',
+  previlege = 'My Privileges',
   Setting = 'Setting',
-  Login = 'login',
-  Signup = 'sign-up',
-  ForgetPassword = 'forget-password',
-  ResetPassword = 'reset-password',
 }
 
 export interface MenuLinkType {
@@ -84,23 +80,16 @@ export const menuLinks: MenuLinkType[] = [
   },
   {
     id: 8,
-    title: linkEnum.Setting,
+    title: linkEnum.previlege,
+    icon: PrivilageIcon,
     link: '#!',
-    icon: SettingsIcon,
     available: false,
   },
   {
     id: 9,
-    title: linkEnum.Login,
+    title: linkEnum.Setting,
     link: '/authentication/login',
-    icon: SignInIcon,
-    available: true,
-  },
-  {
-    id: 10,
-    title: linkEnum.Signup,
-    link: '/authentication/sign-up',
-    icon: SignUpIcon,
-    available: true,
+    icon: SettingsIcon,
+    available: false,
   },
 ];

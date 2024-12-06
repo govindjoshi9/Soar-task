@@ -1,6 +1,6 @@
 import { AppBar, Box, IconButton, Link, Stack, Toolbar, Typography } from '@mui/material';
 import IconifyIcon from 'components/base/IconifyIcon';
-import Image from 'components/base/Image';
+// import Image from 'components/base/Image';
 import NotificationDropdown from 'layouts/main-layout/appbar/NotificationDropdown';
 import ProfileDropdown from 'layouts/main-layout/appbar/ProfileDropdown';
 import SearchInput from 'layouts/main-layout/appbar/SearchInput';
@@ -52,7 +52,7 @@ const MainNavbar = ({ onDrawerToggle }: NavbarProps) => {
           </Typography>
           <Stack direction="row" gap={1} sx={{ display: { xs: 'flex', md: 'none' } }}>
             <Link href="/" sx={{ display: 'flex', p: 0.5 }}>
-              <Image src="/Header_c" alt="Logo" sx={{ width: 25 }} />
+              {/* <Image src="/Header_c" alt="sss" sx={{ width: 25 }} /> */}
             </Link>
             <IconButton onClick={onDrawerToggle} sx={{ display: { md: 'none' } }}>
               <IconifyIcon icon="mingcute:menu-line" color="primary.darker" width={25} />

@@ -33,11 +33,6 @@ const Dashboard = () => {
       <Grid item xs={12} lg={6} xxl={8} zIndex={1}>
         <BalanceHistory />
       </Grid>
-
-      {/* ------------- Data-Grid section ---------------- */}
-      {/* <Grid item xs={12}>
-        <InvoiceOverviewTable />
-      </Grid> */}
     </Grid>
   );
 };
