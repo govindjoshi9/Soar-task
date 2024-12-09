@@ -63,7 +63,7 @@ const MenuListItem = ({ menuItem, onDrawerClose }: MenuListProps) => {
             minWidth: 'auto',
 
             color: isActive
-              ? 'primary.dark'
+              ? 'primary.darker'
               : menuItem.available
                 ? 'neutral.dark'
                 : 'action.disabled',

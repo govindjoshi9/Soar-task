@@ -88,7 +88,7 @@ export const menuLinks: MenuLinkType[] = [
   {
     id: 9,
     title: linkEnum.Setting,
-    link: '/authentication/login',
+    link: '/Setting',
     icon: SettingsIcon,
     available: false,
   },

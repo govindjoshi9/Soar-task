@@ -3,7 +3,6 @@ import WeeklyActivity from 'components/sections/dashboard/activity/WeeklyActivit
 import BalanceHistory from 'components/sections/dashboard/balance/BalanceHistory';
 import MyCards from 'components/sections/dashboard/creditCards/MyCards';
 import ExpenseStatistics from 'components/sections/dashboard/expense/ExpenseStatistics';
-// import InvoiceOverviewTable from 'components/sections/dashboard/invoice/InvoiceOverviewTable';
 import RecentTransactions from 'components/sections/dashboard/transactions/RecentTransaction';
 import QuickTransfer from 'components/sections/dashboard/transfer/QuickTransfer';
 
