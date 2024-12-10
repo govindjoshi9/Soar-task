@@ -32,12 +32,10 @@ const ExpenseStatisticsChart = ({ chartRef, ...rest }: ExpenseStatisticsChartPro
   const { palette } = theme;
   const chartOptions: ECOption = useMemo(() => {
     return {
-      backgroundColor: palette.common.white,
-
+      backgroundColor: palette.common.white, // Background color for chart container
       tooltip: {
         trigger: 'item',
       },
-
       color: [
         palette.primary.darker,
         palette.grey[900],
@@ -48,47 +46,28 @@ const ExpenseStatisticsChart = ({ chartRef, ...rest }: ExpenseStatisticsChartPro
         {
           name: 'Expense',
           type: 'pie',
-          selectedMode: 'series',
-          selectedOffset: 5,
-          radius: '90%',
-          center: ['45%', '45%'],
-          roseType: 'radius',
-          avoidLabelOverlap: false,
-
+          radius: '100%',
+          center: ['50%', '50%'],
+          avoidLabelOverlap: true,
           data: seriesData,
-
           label: {
             show: true,
             position: 'inside',
-            formatter: (params) => {
-              return `{percent|${params.percent}%}\n{name|${params.name}}`;
-            },
-            rich: {
-              percent: {
-                fontSize: 16,
-                fontWeight: 'bold',
-                color: palette.common.white,
-              },
-              name: {
-                fontSize: 13,
-                fontWeight: 'bold',
-                color: palette.common.white,
-              },
-            },
+            formatter: '{b}: {d}%',
+            fontSize: 10,
             color: palette.common.white,
-            fontSize: 13,
             fontWeight: 'bold',
-            padding: [0, 0, 0],
+          },
+          labelLine: {
+            show: true,
           },
           emphasis: {
             itemStyle: {
-              borderColor: palette.common.white,
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)',
             },
           },
-
-          animationType: 'expansion',
-          animationEasing: 'backOut',
-          animationDuration: 1000,
         },
       ],
     };
@@ -100,10 +79,8 @@ const ExpenseStatisticsChart = ({ chartRef, ...rest }: ExpenseStatisticsChartPro
       option={chartOptions}
       ref={chartRef}
       sx={{
-        width: 1,
-        height: 1,
-        maxHeight: 270,
-        minWidth: 1,
+        width: '100%',
+        height: 100,
       }}
       {...rest}
     />

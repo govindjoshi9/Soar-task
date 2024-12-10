@@ -67,6 +67,9 @@ const BalanceHistoryChart = ({ chartRef, ...rest }: BalanceHistoryChartProps) =>
       },
       yAxis: {
         type: 'value',
+        min: 0, // Set minimum value to 200
+        max: 800, // Set maximum value to 800
+        interval: 200,
         axisLabel: {
           padding: 5,
           color: palette.primary.light,
