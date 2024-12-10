@@ -6,7 +6,7 @@ A powerful and user-friendly web application designed to manage daily and weekly
 
 You can access the live demo of the project here:
 
-[**Soar Task Management App**](https://your-hosted-link.com)
+[**Soar Task Management App**](https://soar-task-delta.vercel.app/)
 
 ## Project Features
 
