@@ -98,9 +98,7 @@ npm run deploy
 Follow your hosting provider's instructions to deploy the build from the dist/ directory.
 
 - **Technologies Used**
-- Frontend: React, Vite, Tailwind CSS
-- Backend: Node.js, Express, MongoDB
-- Authentication: JWT (JSON Web Token) for secure login
+- Frontend: React, Vite, MUI, Typscript, React-router-dom
 - Charting: Chart.js for displaying expense trends and summaries
 
 - **Screenshots**
